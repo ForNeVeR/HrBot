@@ -18,7 +18,7 @@ namespace HrBot
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers().AddNewtonsoftJson();
+            services.AddControllers();
             services.AddOptions();
 
             services.Configure<AppSettings>(Configuration.GetSection("Configuration"));
